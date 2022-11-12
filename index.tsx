@@ -1,7 +1,5 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image";
-import pinkHeart from "../images/pink-heart.gif";
 
 const pageStyles = {
   color: "#232129",
@@ -190,22 +188,6 @@ const IndexPage: React.FC<PageProps> = () => {
   )
 }
 
-import 'bootstrap/dist/css/bootstrap.css';
-import Image from 'react-bootstrap/Image'
-import { Container, Row } from "react-bootstrap";
-
-const PinkHeart: React.FC<PageProps> = () => {
-  return (
-    <Container>
-      {/* <Row></Row> */}
-      <Row>
-        <Image className="img-fluid img-thumbnail" height='50%' src={pinkHeart} alt="Pink Heart" />
-      </Row>
-      {/* <Row></Row> */}
-    </Container>
-  )
-}
-
-export default PinkHeart
+export default IndexPage
 
 export const Head: HeadFC = () => <title>Pink Heart</title>
